@@ -1,23 +1,34 @@
-import logo from './logo.svg';
+//import logo from './logo.svg';
 import './App.css';
+//import { Componente1 } from './components/Componente1';
+//import { Componente2 } from './components/Componente2';
+import { Componenteheader } from './components/Componenteheader';
+import Compinicio from './components/Compinicio';
+import Compfotos from './components/Compfotos';
+import Compfondo from './components/Compfondo';
+import Compmomentos from './components/Compmomentos';
+import Sidebar from './components/Sidebar';
+
+
+
+
 
 function App() {
   return (
     <div className="App">
+      <Compfondo/>
+       <Componenteheader />
+       <Sidebar/>
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
+
+       <Compinicio />
+
+        <Compmomentos/>
+
+       <Compfotos />
+     
       </header>
+      
     </div>
   );
 }
